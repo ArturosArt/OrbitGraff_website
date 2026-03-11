@@ -1,12 +1,10 @@
-import dickbutt from './assets/dickbutt.svg'
-
 function App() {
   return (
-    <main className="flex min-h-screen items-center justify-center p-6">
+    <main className="flex min-h-screen items-center justify-center bg-black">
       <img
-        src={dickbutt}
-        alt="Dickbutt meme"
-        className="h-auto w-full max-w-md"
+        src="/7185310765432815321.jpg"
+        alt="OrbitGraff landing image"
+        className="h-screen w-screen object-contain"
       />
     </main>
   )
