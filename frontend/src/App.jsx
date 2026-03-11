@@ -1,8 +1,8 @@
 function App() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-black">
+    <main className="flex min-h-screen items-center justify-center">
       <img
-        src="/7185310765432815321.jpg"
+        src="/icon.png"
         alt="OrbitGraff landing image"
         className="h-screen w-screen object-contain"
       />
