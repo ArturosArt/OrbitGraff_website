@@ -2,7 +2,6 @@ import { useEffect, useEffectEvent } from 'react'
 import {
   angularVelocity,
   headInsets,
-  initialPosition,
   initialVelocity,
   pauseDuration,
 } from './headConfig.js'
@@ -10,6 +9,7 @@ import {
   advanceMotion,
   applyHeadTransform,
   clampPosition,
+  getCenteredPosition,
   getHeadBounds,
   resolveWallCollisions,
 } from './headMotion.js'
@@ -27,7 +27,7 @@ function useBouncingHead(stageRef, headRef, onCornerCollision) {
       return undefined
     }
 
-    const position = { ...initialPosition }
+    const position = { x: 0, y: 0 }
     const velocity = { ...initialVelocity }
     let rotation = 0
     let pausedUntil = 0
@@ -41,6 +41,16 @@ function useBouncingHead(stageRef, headRef, onCornerCollision) {
     const clampToStage = () => {
       const bounds = getHeadBounds(stage, head, headInsets)
       clampPosition(position, bounds)
+      render()
+    }
+
+    const setInitialPosition = () => {
+      const bounds = getHeadBounds(stage, head, headInsets)
+      const centeredPosition = getCenteredPosition(bounds)
+
+      position.x = centeredPosition.x
+      position.y = centeredPosition.y
+
       render()
     }
 
@@ -77,7 +87,7 @@ function useBouncingHead(stageRef, headRef, onCornerCollision) {
       clampToStage()
     }
 
-    clampToStage()
+    setInitialPosition()
     frameId = window.requestAnimationFrame(tick)
     window.addEventListener('resize', handleResize)
 

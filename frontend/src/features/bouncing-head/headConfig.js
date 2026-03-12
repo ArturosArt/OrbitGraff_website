@@ -5,7 +5,6 @@ export const headInsets = {
   bottom: 283 / 2048,
 }
 
-export const initialPosition = { x: 0, y: 0 }
 export const initialVelocity = { x: 260, y: 210 }
 export const angularVelocity = 240
 export const pauseDuration = 260

@@ -23,6 +23,13 @@ export function clampPosition(position, bounds) {
   position.y = Math.min(Math.max(position.y, bounds.minY), bounds.maxY)
 }
 
+export function getCenteredPosition(bounds) {
+  return {
+    x: (bounds.minX + bounds.maxX) / 2,
+    y: (bounds.minY + bounds.maxY) / 2,
+  }
+}
+
 export function advanceMotion(position, velocity, delta) {
   position.x += velocity.x * delta
   position.y += velocity.y * delta
