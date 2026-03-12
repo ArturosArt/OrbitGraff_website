@@ -1,20 +1,44 @@
 @import "tailwindcss";
 
-@layer base {
-  * {
-    box-sizing: border-box;
+@layer components {
+  .stage {
+    @apply relative min-h-screen min-w-80 overflow-hidden text-white antialiased transition-colors duration-300;
   }
 
-  body {
-    min-width: 320px;
-    margin: 0;
-    background: #ff0000;
-    color: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  .stage-red {
+    @apply bg-[#ff0000];
   }
 
-  #root {
-    min-height: 100vh;
+  .stage-blue {
+    @apply bg-[#0057ff];
+  }
+
+  .stage-green {
+    @apply bg-[#11a36a];
+  }
+
+  .stage-orange {
+    @apply bg-[#ff7a00];
+  }
+
+  .stage-violet {
+    @apply bg-[#7c3aed];
+  }
+
+  .bouncing-head {
+    @apply pointer-events-none absolute left-0 top-0 h-auto origin-center select-none;
+    width: min(46vw, 18rem);
+    --head-rotation: 0deg;
+    --head-x: 0px;
+    --head-y: 0px;
+    transform: translate3d(var(--head-x), var(--head-y), 0)
+      rotate(var(--head-rotation));
+    will-change: transform;
+  }
+
+  @media (min-width: 768px) {
+    .bouncing-head {
+      width: min(34vw, 22rem);
+    }
   }
 }
