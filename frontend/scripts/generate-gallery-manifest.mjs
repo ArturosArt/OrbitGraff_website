@@ -13,8 +13,14 @@ const outputDir = path.join(projectRoot, 'src', 'content')
 const outputFile = path.join(outputDir, 'galleryManifest.js')
 const supportedExtensions = new Set(['.avif', '.gif', '.jpeg', '.jpg', '.png', '.svg', '.webp'])
 const thumbnailSourceExtensions = new Set(['.jpeg', '.jpg', '.png'])
-const thumbnailMaxSize = 512
-const thumbnailConfigValue = JSON.stringify({ maxSize: thumbnailMaxSize, format: 'jpeg', generator: 'ffmpeg' })
+const thumbnailMaxSize = 360
+const thumbnailQuality = 10
+const thumbnailConfigValue = JSON.stringify({
+  maxSize: thumbnailMaxSize,
+  quality: thumbnailQuality,
+  format: 'jpeg',
+  generator: 'ffmpeg',
+})
 let warnedAboutMissingFfmpeg = false
 
 function compareFileNames(left, right) {
@@ -136,6 +142,8 @@ async function ensureThumbnail(fileName, sourceModifiedAt) {
         sourcePath,
         '-vf',
         `scale='min(${thumbnailMaxSize},iw)':'min(${thumbnailMaxSize},ih)':force_original_aspect_ratio=decrease`,
+        '-q:v',
+        String(thumbnailQuality),
         '-frames:v',
         '1',
         '-update',

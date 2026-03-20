@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+public/gallery/.thumb-config
+public/gallery/thumbs/
 
 # Editor directories and files
 .vscode/*

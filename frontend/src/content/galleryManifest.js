@@ -7,118 +7,118 @@ export const galleryItems = [
     "src": "/gallery/20260207_190927.jpg",
     "alt": "20260207 190927",
     "title": "20260207 190927",
-    "thumbSrc": "/gallery/thumbs/20260207_190927.jpg?v=1774040996541"
+    "thumbSrc": "/gallery/thumbs/20260207_190927.jpg?v=1774041923371"
   },
   {
     "id": "Untitled76_20260112085521",
     "src": "/gallery/Untitled76_20260112085521.jpg",
     "alt": "Untitled76 20260112085521",
     "title": "Untitled76 20260112085521",
-    "thumbSrc": "/gallery/thumbs/Untitled76_20260112085521.jpg?v=1774040996553"
+    "thumbSrc": "/gallery/thumbs/Untitled76_20260112085521.jpg?v=1774041923371"
   },
   {
     "id": "Henry_20251122171520",
     "src": "/gallery/Henry_20251122171520.png",
     "alt": "Henry 20251122171520",
     "title": "Henry 20251122171520",
-    "thumbSrc": "/gallery/thumbs/Henry_20251122171520.jpg?v=1774040996598"
+    "thumbSrc": "/gallery/thumbs/Henry_20251122171520.jpg?v=1774041923388"
   },
   {
     "id": "Untitled58_20251106204032",
     "src": "/gallery/Untitled58_20251106204032.png",
     "alt": "Untitled58 20251106204032",
     "title": "Untitled58 20251106204032",
-    "thumbSrc": "/gallery/thumbs/Untitled58_20251106204032.jpg?v=1774040996536"
+    "thumbSrc": "/gallery/thumbs/Untitled58_20251106204032.jpg?v=1774041923371"
   },
   {
     "id": "20250918_213846",
     "src": "/gallery/20250918_213846.jpg",
     "alt": "20250918 213846",
     "title": "20250918 213846",
-    "thumbSrc": "/gallery/thumbs/20250918_213846.jpg?v=1774040996554"
+    "thumbSrc": "/gallery/thumbs/20250918_213846.jpg?v=1774041923366"
   },
   {
     "id": "20250905_204525",
     "src": "/gallery/20250905_204525.jpg",
     "alt": "20250905 204525",
     "title": "20250905 204525",
-    "thumbSrc": "/gallery/thumbs/20250905_204525.jpg?v=1774040996542"
+    "thumbSrc": "/gallery/thumbs/20250905_204525.jpg?v=1774041923374"
   },
   {
     "id": "20250829_234240",
     "src": "/gallery/20250829_234240.jpg",
     "alt": "20250829 234240",
     "title": "20250829 234240",
-    "thumbSrc": "/gallery/thumbs/20250829_234240.jpg?v=1774040996546"
+    "thumbSrc": "/gallery/thumbs/20250829_234240.jpg?v=1774041923350"
   },
   {
     "id": "20250814_173428",
     "src": "/gallery/20250814_173428.jpg",
     "alt": "20250814 173428",
     "title": "20250814 173428",
-    "thumbSrc": "/gallery/thumbs/20250814_173428.jpg?v=1774040996539"
+    "thumbSrc": "/gallery/thumbs/20250814_173428.jpg?v=1774041923368"
   },
   {
     "id": "20250617_105331",
     "src": "/gallery/20250617_105331.jpg",
     "alt": "20250617 105331",
     "title": "20250617 105331",
-    "thumbSrc": "/gallery/thumbs/20250617_105331.jpg?v=1774040996543"
+    "thumbSrc": "/gallery/thumbs/20250617_105331.jpg?v=1774041923339"
   },
   {
     "id": "20250601_095311",
     "src": "/gallery/20250601_095311.jpg",
     "alt": "20250601 095311",
     "title": "20250601 095311",
-    "thumbSrc": "/gallery/thumbs/20250601_095311.jpg?v=1774040996534"
+    "thumbSrc": "/gallery/thumbs/20250601_095311.jpg?v=1774041923367"
   },
   {
     "id": "20250325_115431",
     "src": "/gallery/20250325_115431.jpg",
     "alt": "20250325 115431",
     "title": "20250325 115431",
-    "thumbSrc": "/gallery/thumbs/20250325_115431.jpg?v=1774040996522"
+    "thumbSrc": "/gallery/thumbs/20250325_115431.jpg?v=1774041923364"
   },
   {
     "id": "IMG_20250208_165752_393",
     "src": "/gallery/IMG_20250208_165752_393.jpg",
     "alt": "IMG 20250208 165752 393",
     "title": "IMG 20250208 165752 393",
-    "thumbSrc": "/gallery/thumbs/IMG_20250208_165752_393.jpg?v=1774040996519"
+    "thumbSrc": "/gallery/thumbs/IMG_20250208_165752_393.jpg?v=1774041923344"
   },
   {
     "id": "20240807_123326",
     "src": "/gallery/20240807_123326.jpg",
     "alt": "20240807 123326",
     "title": "20240807 123326",
-    "thumbSrc": "/gallery/thumbs/20240807_123326.jpg?v=1774040996534"
+    "thumbSrc": "/gallery/thumbs/20240807_123326.jpg?v=1774041923377"
   },
   {
     "id": "20240731_151130",
     "src": "/gallery/20240731_151130.jpg",
     "alt": "20240731 151130",
     "title": "20240731 151130",
-    "thumbSrc": "/gallery/thumbs/20240731_151130.jpg?v=1774040996552"
+    "thumbSrc": "/gallery/thumbs/20240731_151130.jpg?v=1774041923371"
   },
   {
     "id": "20240611_130556",
     "src": "/gallery/20240611_130556.jpg",
     "alt": "20240611 130556",
     "title": "20240611 130556",
-    "thumbSrc": "/gallery/thumbs/20240611_130556.jpg?v=1774040996552"
+    "thumbSrc": "/gallery/thumbs/20240611_130556.jpg?v=1774041923340"
   },
   {
     "id": "Screenshot_20240419_111730_Gallery",
     "src": "/gallery/Screenshot_20240419_111730_Gallery.jpg",
     "alt": "Screenshot 20240419 111730 Gallery",
     "title": "Screenshot 20240419 111730 Gallery",
-    "thumbSrc": "/gallery/thumbs/Screenshot_20240419_111730_Gallery.jpg?v=1774040996441"
+    "thumbSrc": "/gallery/thumbs/Screenshot_20240419_111730_Gallery.jpg?v=1774041923346"
   },
   {
     "id": "Untitled66 (4)",
     "src": "/gallery/Untitled66%20(4).png",
     "alt": "Untitled66 (4)",
     "title": "Untitled66 (4)",
-    "thumbSrc": "/gallery/thumbs/Untitled66%20(4).jpg?v=1774040996521"
+    "thumbSrc": "/gallery/thumbs/Untitled66%20(4).jpg?v=1774041923371"
   }
 ]
