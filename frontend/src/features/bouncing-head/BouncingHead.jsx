@@ -1,14 +1,19 @@
 import { forwardRef } from 'react'
+import BouncingHeadVideo from './BouncingHeadVideo.jsx'
+import BouncingHeadSources from './BouncingHeadSources.jsx'
 
-const BouncingHead = forwardRef(function BouncingHead(_, ref) {
+const BouncingHead = forwardRef(function BouncingHead(
+  { onRemove, removable },
+  ref,
+) {
   return (
-    <img
+    <BouncingHeadVideo
       ref={ref}
-      src="/icon.png"
-      alt="OrbitGraff head"
-      draggable="false"
-      className="bouncing-head"
-    />
+      onRemove={onRemove}
+      removable={removable}
+    >
+      <BouncingHeadSources />
+    </BouncingHeadVideo>
   )
 })
 

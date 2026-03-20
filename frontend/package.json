@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "generate:gallery": "node scripts/generate-gallery-manifest.mjs",
+    "predev": "npm run generate:gallery",
     "dev": "vite",
+    "prebuild": "npm run generate:gallery",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
