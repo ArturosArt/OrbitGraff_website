@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { createPortal } from 'react-dom'
 
 export default function GalleryLightbox({ piece, onClose }) {
   const lightboxRef = useRef(null)
@@ -36,7 +37,7 @@ export default function GalleryLightbox({ piece, onClose }) {
     }
   }
 
-  return (
+  return createPortal(
     <div
       ref={lightboxRef}
       aria-label={`Artwork preview: ${piece.title}`}
@@ -62,6 +63,7 @@ export default function GalleryLightbox({ piece, onClose }) {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   )
 }
