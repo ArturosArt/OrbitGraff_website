@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 function getRevealDelayClass(index) {
   if (index % 3 === 1) {
     return 'reveal-delay-1'
@@ -12,6 +14,7 @@ function getRevealDelayClass(index) {
 
 export default function ArtCard({ piece, index, onSelect }) {
   const delayClass = getRevealDelayClass(index)
+  const [imageSrc, setImageSrc] = useState(piece.thumbSrc ?? piece.src)
 
   return (
     <article className={`art-card reveal ${delayClass}`}>
@@ -22,7 +25,18 @@ export default function ArtCard({ piece, index, onSelect }) {
         type="button"
         onClick={() => onSelect(piece)}
       >
-        <img alt={piece.alt} className="art-image" decoding="async" loading="lazy" src={piece.src} />
+        <img
+          alt={piece.alt}
+          className="art-image"
+          decoding="async"
+          loading="lazy"
+          src={imageSrc}
+          onError={() => {
+            if (imageSrc !== piece.src) {
+              setImageSrc(piece.src)
+            }
+          }}
+        />
       </button>
     </article>
   )

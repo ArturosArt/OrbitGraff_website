@@ -51,4 +51,5 @@ export const contactLinks = [
 export const galleryItems = generatedGalleryItems.map((item) => ({
   ...item,
   src: resolveAssetHref(item.src),
+  thumbSrc: resolveAssetHref(item.thumbSrc ?? item.src),
 }))
