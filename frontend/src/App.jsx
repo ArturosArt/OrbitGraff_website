@@ -15,7 +15,7 @@ const pageByPath = {
   '/contact/': ContactPage,
 }
 
-const minimumLoadingScreenMs = 380
+const minimumLoadingScreenMs = 670
 const maximumLoadingScreenMs = 5000
 const galleryPath = '/art-work/'
 
