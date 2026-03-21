@@ -6,14 +6,12 @@ export default function LoadingScreen({ isActive }) {
 
   return (
     <div aria-hidden={!isActive} className={`loading-screen ${isActive ? 'is-active' : ''}`}>
-      {showFallback ? (
-        <img
-          alt=""
-          aria-hidden="true"
-          className="loading-screen-fallback"
-          src={resolveAssetHref('/orbit_transparent_fallback.png')}
-        />
-      ) : null}
+      <img
+        alt=""
+        aria-hidden="true"
+        className="loading-screen-fallback"
+        src={resolveAssetHref('/orbit_transparent_fallback.png')}
+      />
       <video
         aria-hidden="true"
         autoPlay
