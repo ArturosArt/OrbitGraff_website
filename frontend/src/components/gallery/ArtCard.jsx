@@ -29,7 +29,8 @@ export default function ArtCard({ piece, index, onSelect }) {
           alt={piece.alt}
           className="art-image"
           decoding="async"
-          loading="lazy"
+          fetchPriority={index < 3 ? 'high' : 'auto'}
+          loading={index < 6 ? 'eager' : 'lazy'}
           src={imageSrc}
           onError={() => {
             if (imageSrc !== piece.src) {

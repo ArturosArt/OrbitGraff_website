@@ -1,4 +1,5 @@
 import { aboutContent } from '../../content/orbitSiteData.js'
+import { resolveAssetHref } from '../../utils/resolveAssetHref.js'
 
 export default function ArtistPortrait() {
   return (
@@ -9,7 +10,7 @@ export default function ArtistPortrait() {
           className="portrait-image"
           decoding="async"
           loading="eager"
-          src={aboutContent.image}
+          src={resolveAssetHref(aboutContent.image)}
         />
       </div>
       <p className="portrait-caption">Arturo Anguiano III</p>

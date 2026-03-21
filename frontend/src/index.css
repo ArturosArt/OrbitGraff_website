@@ -101,6 +101,38 @@ select {
   mask-image: radial-gradient(circle at center, black 45%, transparent 90%);
 }
 
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 220ms ease,
+    visibility 0s linear 220ms;
+  background: rgba(244, 242, 255, 0.18);
+  backdrop-filter: blur(2px);
+}
+
+.loading-screen.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
+}
+
+.loading-screen-video {
+  width: min(96vw, 96vh);
+  height: min(96vw, 96vh);
+  max-width: none;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 36px rgba(var(--ink-rgb), 0.18));
+}
+
 .site-header {
   position: sticky;
   top: 0;

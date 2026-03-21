@@ -10,7 +10,15 @@ export default function ContactLinkCard({ item, index }) {
       target={item.external ? '_blank' : undefined}
     >
       <span className="contact-icon">
-        <img alt="" aria-hidden="true" className="contact-icon-graphic" src={item.iconSrc} />
+        <img
+          alt=""
+          aria-hidden="true"
+          className="contact-icon-graphic"
+          decoding="async"
+          fetchPriority="high"
+          loading="eager"
+          src={item.iconSrc}
+        />
       </span>
     </a>
   )

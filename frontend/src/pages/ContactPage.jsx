@@ -3,15 +3,15 @@ import PageIntro from '../components/PageIntro.jsx'
 import { contactLinks } from '../content/orbitSiteData.js'
 import { resolveAssetHref } from '../utils/resolveAssetHref.js'
 
-const iconByLabel = {
-  Email: resolveAssetHref('/mail_icon.png'),
-  Instagram: resolveAssetHref('/ig_logo.png'),
+const iconPathByLabel = {
+  Email: '/mail_icon.png',
+  Instagram: '/ig_logo.png',
 }
 
 export default function ContactPage() {
   const contactItems = contactLinks.map((item) => ({
     ...item,
-    iconSrc: iconByLabel[item.label],
+    iconSrc: resolveAssetHref(iconPathByLabel[item.label]),
   }))
 
   return (
