@@ -12,8 +12,8 @@ export default function LoadingScreen({ isActive }) {
         playsInline
         preload="auto"
       >
-        <source src={resolveAssetHref('/orbit_transparent_fast.webm')} type="video/webm" />
         <source src={resolveAssetHref('/orbit_transparent_fast.mov')} type="video/quicktime" />
+        <source src={resolveAssetHref('/orbit_transparent_fast.webm')} type="video/webm" />
       </video>
     </div>
   )
