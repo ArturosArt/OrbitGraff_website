@@ -194,7 +194,7 @@ function App() {
       <SiteShell currentPath={currentPath}>
         <CurrentPage loadKey={loadKey} onReady={handlePageReady} />
       </SiteShell>
-      <LoadingScreen isActive={isLoadingScreenVisible} />
+      <LoadingScreen key={loadKey} isActive={isLoadingScreenVisible} />
     </>
   )
 }

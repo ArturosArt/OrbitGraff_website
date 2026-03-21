@@ -125,12 +125,21 @@ select {
   transition-delay: 0s;
 }
 
+.loading-screen-fallback,
 .loading-screen-video {
   width: min(96vw, 96vh);
   height: min(96vw, 96vh);
   max-width: none;
   object-fit: contain;
   filter: drop-shadow(0 22px 36px rgba(var(--ink-rgb), 0.18));
+}
+
+.loading-screen-video {
+  transition: opacity 180ms ease;
+}
+
+.loading-screen-video.is-hidden {
+  opacity: 0;
 }
 
 .site-header {
